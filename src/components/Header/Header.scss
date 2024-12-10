@@ -1,0 +1,27 @@
+@use "../../assets/global" as *;
+@use "../../assets/mixin" as *;
+header {
+  width: 100%;
+  height: 116px;
+  border-bottom: 1px solid black;
+  padding: 0 70px 0 70px;
+  @include flex($justify: space-between);
+
+  nav {
+    width: 29.17%;
+    height: 41px;
+    border: 1px solid red;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      @include flex($justify: space-between);
+      li {
+        font-family: 20px;
+        font-weight: 600;
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@use "../../../assets/global" as *;
+@use "../../../assets/mixin" as *;
+
+.forming {
+  width: 100%;
+  height: 1002px;
+  // border: 1px solid red;
+  @include flex($direction: column, $justify: space-between);
+  padding: 55px 0 55px 0;
+  .forming-header {
+    width: 61.6%;
+    height: 232px;
+    // border: 1px solid red;
+    @include flex($direction: column, $justify: space-between);
+    .irrational {
+      width: 100%;
+      height: 128px;
+      // border: 1px solid red;
+      p {
+        font-size: 48px;
+        font-weight: 600;
+        color: #000;
+        text-align: center;
+        letter-spacing: -2%;
+      }
+    }
+    .approach {
+      height: 64px;
+      width: 54%;
+      // border: 1px solid red;
+      p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #000;
+        letter-spacing: -2%;
+        text-align: center;
+      }
+    }
+  }
+  .forming-main {
+    width: 100%;
+    height: 330px;
+    // border: 1px solid red;
+    @include flex($justify: space-between);
+    padding: 0 13px 0 13px;
+  }
+  .forming-footer {
+    width: 36.84%;
+    gap: 30px;
+    // border: 1px solid red;
+    margin-top: 32px;
+    @include flex($direction: column);
+    .fft {
+      font-size: 24px;
+      font-weight: 400;
+      color: #000;
+      text-align: center;
+    }
+  }
+}

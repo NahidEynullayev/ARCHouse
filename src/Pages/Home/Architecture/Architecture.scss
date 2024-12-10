@@ -1,0 +1,58 @@
+@use "../../../assets/global" as *;
+@use "../../../assets/mixin" as *;
+
+.arc {
+  width: 100%;
+  height: 826px;
+  border-bottom: 1px solid black;
+  // padding: 0 20px 0 20px;
+
+  .mounImage {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 246px);
+    width: 84.1%;
+  }
+  .text-social {
+    width: 100%;
+    @include flex($justify: space-between, $align: flex-start);
+    margin: 140px 0 0 0;
+    // border: 1px solid red;
+    padding: 0 55px 0 55px;
+    .text {
+      width: 659px;
+      height: 348px;
+      // border: 1px solid red;
+      .textP {
+        font-size: 104px;
+        height: 700;
+        color: #000;
+        letter-spacing: -3%;
+
+        &::before {
+          content: "Since 1975 —";
+
+          position: absolute;
+          top: 260px;
+          left: 540px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #000;
+        }
+      }
+    }
+    .social-button {
+      width: 178px;
+      // border: 1px solid red;
+      gap: 50px;
+      @include flex($direction: column, $justify: flex-start, $align: flex-end);
+      margin-top: 43px;
+      .social {
+        width: 136px;
+        height: 24px;
+        border: 1px solid red;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@use "../../../assets/global" as *;
+@use "../../../assets/mixin" as *;
+
+.projectsContainer {
+  width: 100%;
+  height: 4070px;
+  // border: 1px solid red;
+  main {
+    .projOne {
+      @include flex($align: flex-start);
+      // border: 1px solid red;
+      gap: 50px;
+      margin-top: 70px;
+      .projOneOne {
+        width: 55%;
+        // border: 1px solid red;
+        .projOneOneImg {
+          width: 100%;
+        }
+      }
+      .projOneTwo {
+        width: 30%;
+        .projOneTwoImg {
+          width: 100%;
+        }
+      }
+    }
+    .projTwo {
+      // width: 43.9%;
+
+      // border: 1px solid red;
+      @include flex($align: flex-end);
+      gap: 20px;
+      margin-top: 70px;
+      .projTwoOne {
+        width: 43.9%;
+        // border: 1px solid red;
+        .projTwoOneImg {
+          width: 100%;
+        }
+      }
+      .projTwoTwo {
+        width: 43.9%;
+        height: 505px;
+        // border: 1px solid red;
+        .projTwoTwoImg {
+          width: 100%;
+        }
+        p {
+          font-size: 56px;
+          font-weight: 700;
+          letter-spacing: -3%;
+          text-align: center;
+        }
+      }
+    }
+
+    .projThree {
+      width: 100%;
+      @include flex($align: flex-start);
+      margin-top: 70px;
+      gap: 70px;
+      // transform: translate(-300px);
+      .projThreeOne {
+        width: 25%;
+        .projThreeOneImg {
+          width: 100%;
+        }
+      }
+      .projThreeTwo {
+        width: 58.4%;
+        .projThreeTwoImg {
+          width: 100%;
+        }
+      }
+    }
+
+    .projFour {
+      width: 100%;
+      @include flex($align: flex-start);
+      margin-top: 70px;
+      gap: 124px;
+      // transform: translate(-300px);
+      .projFourOne {
+        width: 40%;
+        .projFourOneImg {
+          width: 100%;
+        }
+      }
+      .projFourTwo {
+        width: 40%;
+        .projFourTwoImg {
+          width: 100%;
+        }
+      }
+    }
+
+    .projFive {
+      width: 100%;
+      @include flex($align: flex-start);
+      margin-top: 70px;
+      gap: 124px;
+      // transform: translate(-300px);
+      .projFiveOne {
+        width: 58.4%;
+        .projFiveOneImg {
+          width: 100%;
+        }
+      }
+      .projFiveTwo {
+        width: 21.5%;
+        .projFiveTwoImg {
+          width: 100%;
+        }
+      }
+    }
+
+    .projSix {
+      width: 100%;
+      @include flex($align: flex-start);
+      margin-top: 70px;
+      gap: 124px;
+      // transform: translate(-300px);
+      .projSixOne {
+        width: 37%;
+        .projSixOneImg {
+          width: 100%;
+        }
+      }
+      .projSixTwo {
+        width: 44%;
+        .projSixTwoImg {
+          width: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 70px;
+    height: 144px;
+    @include flex($direction: column);
+    gap: 30px;
+
+    p {
+      font-size: 48px;
+      font-weight: 600;
+      letter-spacing: -2%;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
